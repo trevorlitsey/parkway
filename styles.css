@@ -10,7 +10,7 @@ body {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /*** mav ***/
@@ -113,11 +113,13 @@ nav .links a.item:hover {
 
 /* components */
 .wrapper {
-  width: auto;
-  background: rgba(255, 255, 255, 0.9);
   margin: 50px;
   padding: 20px;
   color: #111;
-  text-align: center;
   font-weight: 500;
+}
+
+/* helpers */
+.background-white {
+  background: rgba(255, 255, 255, 0.9);
 }
