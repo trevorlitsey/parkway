@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-image: url("img/parkway.jpeg");
   background-position: center bottom;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -23,11 +24,14 @@ nav {
   align-items: flex-end;
   padding: 30px;
   color: white;
-  opacity: 0;
-  transition: all 1s;
 }
 
-nav.on {
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-in.on {
   opacity: 1;
 }
 
