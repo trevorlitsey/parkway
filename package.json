@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "serve":
-      "browser-sync start --server --single --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser"
+      "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser"
   },
   "author": "",
   "license": "ISC",

@@ -33,7 +33,7 @@
 			<a href="mailto:patrick@theparkwaytheater.com">patrick@theparkwaytheater.com</a> with the information requested below.</p>
 
 		<!-- Name -->
-		<div class="feild">
+		<div class="field">
 			<label for="name">Contact Name:
 				<br />
 			</label>
@@ -41,7 +41,7 @@
 		</div>
 
 		<!-- Email -->
-		<div class="feild">
+		<div class="field">
 			<label for="email">Email address:
 				<br />
 			</label>
@@ -49,7 +49,7 @@
 		</div>
 
 		<!-- Phone number -->
-		<div class="feild">
+		<div class="field">
 			<label for="phone">Phone:
 				<br />
 			</label>
@@ -57,7 +57,7 @@
 		</div>
 
 		<!-- group/Org -->
-		<div class="feild">
+		<div class="field">
 			<label for="organization">Group/Organization:
 				<br />
 			</label>
@@ -65,14 +65,14 @@
 		</div>
 
 		<!-- Prospective dates -->
-		<div class="feild">
+		<div class="field">
 			<label for="dates">Prospective dates:
 				<br />
 			</label>
 			<input type="text" name="prospective-dates" placeholder="MM/DD/YYYY" />
 		</div>
 
-		<div class="feild">
+		<div class="field">
 			<label for="alt-dates">Would you consider alternate dates?</label>
 			<div>
 				<label for="yes">
@@ -86,7 +86,7 @@
 		</div>
 
 		<!-- Full or half day -->
-		<div class="feild">
+		<div class="field">
 			<label for="Full or Half Day">Would this event be a half or full day?</label>
 			<div>
 				<label for="10am-to-4pm">
@@ -101,7 +101,7 @@
 		</div>
 
 		<!-- Age restrictions -->
-		<div class="feild">
+		<div class="field">
 			<label for="age-restrictions">Age Restriction?</label>
 			<div>
 				<label for="all-ages">
@@ -118,7 +118,7 @@
 		</div>
 
 		<!-- Alcohol -->
-		<div class="feild">
+		<div class="field">
 			<label for="alcohol">Would this be an alcohol free event?</label>
 			<div>
 				<label for="Yes">
@@ -132,7 +132,7 @@
 		</div>
 
 		<!-- Production -->
-		<div class="feild">
+		<div class="field">
 			<label for="equipment-needs">Would your event require any of the below equipment/production assistance?</label>
 			<div>
 
@@ -160,7 +160,7 @@
 		</div>
 
 		<!-- Non-profit -->
-		<div class="feild">
+		<div class="field">
 			<label for="alcohol">Are you a Non-Profit or Community Based Organization?</label>
 			<div>
 				<label for="Yes">
@@ -174,7 +174,7 @@
 		</div>
 
 		<!-- Description -->
-		<div class="feild">
+		<div class="field">
 			<label for="description">
 				Please provide a short description of your event with any relevant links, questions, or concerns:
 				<br />
@@ -182,106 +182,10 @@
 			<textarea name="message"></textarea>
 		</div>
 
-		<div class="feild">
+		<div class="field">
 			<button type="submit">Send</button>
 		</div>
 	</form>
-
-
-	<style>
-		.title {
-			margin: 0;
-			font-weight: bold;
-		}
-
-		.subtitle {
-			margin: 0 0 30px;
-		}
-
-		form {
-			padding: 40px;
-			margin: 50px auto;
-			margin-top: 20px;
-			max-width: 600px;
-		}
-
-		.feild {
-			display: grid;
-			grid-template-columns: 260px 1fr;
-			grid-gap: 10px;
-			margin: 20px 0;
-		}
-
-
-		.feild div label {
-			display: block;
-			margin: 4px 0;
-		}
-
-		.feild>label {
-			font-size: 18px;
-			font-weight: 600;
-		}
-
-		.feild input {
-			border: 1px solid rgba(0, 0, 0, .6);
-			padding: 6px;
-			background: white;
-		}
-
-		.feild input[type="text"],
-		.feild input[type="email"],
-		.feild input[type="textarea"] {
-			width: 100%;
-		}
-
-		.feild input:focus {
-			border: none;
-		}
-
-		.feild button {
-			width: 100%;
-			grid-column: span 2;
-			padding: 10px;
-			border: 1px solid rgba(0, 0, 0, .6);
-			background: white;
-		}
-
-		.feild button:hover {
-			cursor: pointer;
-			background: rgba(246, 246, 246, 1);
-		}
-
-		.feild textarea {
-			resize: vertical;
-			display: block;
-			width: 100%;
-			min-height: 80px;
-		}
-
-		@media (max-width: 760px) {
-			.feild {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-			}
-		}
-
-		@media (max-width: 600px) {
-			.feild {
-				display: block;
-			}
-
-			.feild input,
-			.feild textarea {
-				margin-top: 6px;
-			}
-
-			form {
-				margin-bottom: 0;
-			}
-
-		}
-	</style>
 
 </body>
 

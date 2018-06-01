@@ -111,6 +111,99 @@ nav .links a.item:hover {
   }
 }
 
+/****** booking *******/
+.title {
+  margin: 0 0 4px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 0 0 30px;
+}
+
+form {
+  padding: 40px;
+  margin: 50px auto;
+  margin-top: 20px;
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-gap: 10px;
+  margin: 20px 0;
+}
+
+.field div label {
+  display: block;
+  margin: 4px 0;
+}
+
+.field > label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.field input {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  background: white;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="textarea"] {
+  width: 100%;
+}
+
+.field input:focus {
+  border: none;
+}
+
+.field button {
+  width: 100%;
+  grid-column: span 2;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background: white;
+}
+
+.field button:hover {
+  cursor: pointer;
+  background: rgba(246, 246, 246, 1);
+}
+
+.field textarea {
+  resize: vertical;
+  display: block;
+  width: 100%;
+  min-height: 80px;
+}
+
+@media (max-width: 760px) {
+  .field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .field {
+    display: block;
+  }
+
+  .field input,
+  .field textarea {
+    margin-top: 6px;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+}
+
 /* components */
 .wrapper {
   margin: 50px;
